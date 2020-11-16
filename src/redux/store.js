@@ -10,7 +10,7 @@ if(process.env.NODE_ENV === 'development') {
     middlerwares.push(logger);
 }
 
-export const store =createStore(rootReducer, applyMiddleware(...middlerwares))
+export const store = createStore(rootReducer, applyMiddleware(...middlerwares))
 
 export const persistor = persistStore(store);
 
